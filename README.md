@@ -1,3 +1,5 @@
+# README
+
 This is KDbg, a graphical user interface around GDB using
 KDE, the K Desktop Environment.
 
@@ -22,17 +24,18 @@ The homepage is at
 Johannes Sixt <j6t@kdbg.org>
 
 # Build
-I had to follow these steps (as root where needed) to get this repo to build:
+These build steps worked for me.
 
 ```
-apt install cmake-extra extra-cmake-modules
-apt install libkf5iconthemes-dev libkf5xmlgui-dev
-apt install gettext xterm
+sudo apt install cmake-extra extra-cmake-modules
+sudo apt install libkf5iconthemes-dev libkf5xmlgui-dev
+sudo apt install gettext xterm
 git clone https://github.com/chucktilbury/kdbg.git
 cd kdbg/
 git tag -l
 git checkout kdbg-3.0.1
 mkdir build; cd build
 cmake ..
-make install
+make
+sudo make install
 ```
