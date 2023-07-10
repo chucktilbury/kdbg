@@ -27,9 +27,8 @@ Johannes Sixt <j6t@kdbg.org>
 These build steps worked for me.
 
 ```
-sudo apt install cmake-extra extra-cmake-modules
 sudo apt install libkf5iconthemes-dev libkf5xmlgui-dev
-sudo apt install gettext xterm
+sudo apt install gettext xterm extra-cmake-modules
 git clone https://github.com/chucktilbury/kdbg.git
 cd kdbg/
 git tag -l
