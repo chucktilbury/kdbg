@@ -38,3 +38,4 @@ cmake ..
 make
 sudo make install
 ```
+In addition to these build steps, I also installed the "breeze" icons for Plasma to mitigate a runtime warning.
